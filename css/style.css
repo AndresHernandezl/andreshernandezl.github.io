@@ -166,13 +166,13 @@
   text-align: center;
   padding: 40px 0;
 }
-.tituloDecoIzquierdo {
+.tituloVerde:before {
   width: 25%;
   height: 16px;
   margin-right: 40px;
   content: url("../images/decoIzquierda.png");
 }
-.tituloDecoDerecho {
+.tituloVerde:after {
   width: 25%;
   height: 16px;
   margin-left: 40px;
