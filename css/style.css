@@ -84,9 +84,11 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 .navegador-Item {
   margin: 20px 20px;
+  width: 125px;
 }
 .navegador-Item a {
   color: #2e2e2e;
