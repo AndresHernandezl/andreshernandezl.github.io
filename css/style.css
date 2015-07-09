@@ -84,7 +84,6 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
 }
 .navegador-Item {
   margin: 20px 20px;
@@ -259,15 +258,30 @@
 .subTituloVerde {
   color: #50bfa1;
   text-align: center;
+  margin: 40px 0;
 }
 .Habilidades {
   width: 100%;
-  background-color: #6c6c6c;
+  background-color: #dbdbdb;
   margin: 0 auto;
   padding-bottom: 80px;
 }
 .Habilidades-content {
   height: 175px;
+}
+.progress {
+  margin-top: 10px;
+}
+.Estudios {
+  padding-bottom: 80px;
+}
+.Estudios-imagen img {
+  margin: 0 auto;
+  width: 250px;
+  height: 191px;
+}
+.Estudio-item {
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=lib/estilo.css.map */
 /*# sourceMappingURL=style.css.map */
