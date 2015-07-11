@@ -22,9 +22,9 @@
           justify-content: center;
 }
 .slider {
-  height: 650px;
+  height: 670px;
   width: 100%;
-  background-image: url("../img/fondo-Header.png");
+  background-image: url("../img/fondo-Header2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -475,13 +475,23 @@ figure.effect-hera:hover p i:empty {
   border: 3px solid #51af71;
   text-decoration: none;
 }
+.scroll {
+  background-color: #ddd;
+  background-image: url("../img/fondo-Contact.svg");
+  background-position: center center;
+  background-size: 500px;
+  -webkit-animation: scrollBad 5s linear infinite;
+  animation: scrollBad 5s linear infinite;
+}
 .Contacto {
   padding-bottom: 80px;
-  background-image: url("../img/Munco-contac.png");
+  overflow: hidden;
+  position: relative;
 }
 .titulo-Contact {
   display: inline-block;
   margin: 0 auto;
+  z-index: 1;
 }
 .tituloRojo {
   color: #f6224a;
@@ -599,6 +609,22 @@ figure.effect-hera:hover p i:empty {
 }
 .icon-cube.linkedin::after {
   background-color: #1079f2;
+}
+@-webkit-keyframes scrollBad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -320px;
+  }
+}
+@keyframes scrollBad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -320px;
+  }
 }
 /*# sourceMappingURL=lib/estilo.css.map */
 /*# sourceMappingURL=style.css.map */
