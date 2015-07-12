@@ -71,6 +71,17 @@
   -webkit-transform: translateY(-115px);
       -ms-transform: translateY(-115px);
           transform: translateY(-115px);
+  margin-left: 40px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.Logo2 {
+  width: 250px;
+  height: 190px;
+  margin-left: 40px;
+  background-image: url("../img/Logo2.svg");
+  background-repeat: no-repeat;
 }
 .menu {
   background-color: #eaeaea;
@@ -85,11 +96,15 @@
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  width: 100%;
 }
 .navegador-Item {
   margin: 20px 20px;
-  width: 125px;
   text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
 }
 .navegador-Item a {
   color: #2e2e2e;
@@ -158,6 +173,7 @@
   }
 }
 .acerca {
+  padding-top: 100px;
   padding-bottom: 80px;
 }
 .titulo-acerca {
@@ -257,6 +273,7 @@
   background-color: #904d0a;
 }
 .Perfil {
+  padding-top: 100px;
   padding-bottom: 80px;
 }
 .subTituloVerde {
@@ -269,6 +286,7 @@
   background-color: #dbdbdb;
   margin: 0 auto;
   padding-bottom: 80px;
+  padding-top: 100px;
 }
 .Habilidades-content {
   height: 180px;
@@ -277,6 +295,7 @@
   margin-top: 10px;
 }
 .Estudios {
+  padding-top: 100px;
   padding-bottom: 80px;
 }
 .Estudios-imagen img {
@@ -286,6 +305,10 @@
 }
 .Estudio-item {
   padding-bottom: 30px;
+}
+.Portafolio {
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 .Potafafolio-item {
   position: relative;
@@ -484,6 +507,7 @@ figure.effect-hera:hover p i:empty {
   animation: scrollBad 5s linear infinite;
 }
 .Contacto {
+  padding-top: 100px;
   padding-bottom: 80px;
   overflow: hidden;
   position: relative;
@@ -625,6 +649,19 @@ figure.effect-hera:hover p i:empty {
   100% {
     background-position: 0 -320px;
   }
+}
+.stiky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+.acerca,
+.Perfil,
+.Habilidades,
+.Estudios,
+.Contacto {
+  padding: 60px 0;
 }
 /*# sourceMappingURL=lib/estilo.css.map */
 /*# sourceMappingURL=style.css.map */
