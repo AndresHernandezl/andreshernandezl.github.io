@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
+.activate {
+  border-bottom: 3px solid #f6224a;
+  color: #f6224a;
+}
 .vertical-centered-text {
   -ms-display: -ms-flexbox;
   display: -webkit-box;
@@ -97,9 +101,10 @@
   display: flex;
   padding: 0;
   width: 100%;
+  height: 60px;
 }
 .navegador-Item {
-  margin: 20px 20px;
+  padding: 20px;
   text-align: center;
   -webkit-box-flex: 1;
   -webkit-flex: auto;
@@ -171,10 +176,6 @@
   100% {
     margin-top: 0px;
   }
-}
-.acerca {
-  padding-top: 100px;
-  padding-bottom: 80px;
 }
 .titulo-acerca {
   display: inline-block;
@@ -272,10 +273,6 @@
   height: 225px;
   background-color: #904d0a;
 }
-.Perfil {
-  padding-top: 100px;
-  padding-bottom: 80px;
-}
 .subTituloVerde {
   color: #50bfa1;
   text-align: center;
@@ -285,18 +282,12 @@
   width: 100%;
   background-color: #dbdbdb;
   margin: 0 auto;
-  padding-bottom: 80px;
-  padding-top: 100px;
 }
 .Habilidades-content {
   height: 180px;
 }
 .progress {
   margin-top: 10px;
-}
-.Estudios {
-  padding-top: 100px;
-  padding-bottom: 80px;
 }
 .Estudios-imagen img {
   margin: 0 auto;
@@ -305,10 +296,6 @@
 }
 .Estudio-item {
   padding-bottom: 30px;
-}
-.Portafolio {
-  padding-top: 100px;
-  padding-bottom: 80px;
 }
 .Potafafolio-item {
   position: relative;
@@ -507,8 +494,6 @@ figure.effect-hera:hover p i:empty {
   animation: scrollBad 5s linear infinite;
 }
 .Contacto {
-  padding-top: 100px;
-  padding-bottom: 80px;
   overflow: hidden;
   position: relative;
 }
