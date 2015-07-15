@@ -1,7 +1,37 @@
+/**Menu Resposive*/
+$(document).ready(main);
+var contador = 1;
+
+function main (){
+	$('.bt-menu').click(function(){
+	if(contador == 1){
+		$('.menu').animate({
+			left: '0'
+		});
+	contador =0;
+	}else {
+			contador = 1;
+			$('.menu').animate({
+			left: '-100%'
+		});
+	}
+		
+	});
+	$('.navegador-Item').click(function(){
+		$('.menu').animate({
+			left: '-100%'
+		});
+	});
+}
+
+
+/**stiky Menu*/
+
 var $navTop = 441;
 var pegarStyky = function(){
 	var $scrollTop = $(window).scrollTop();
-	
+
+
 	if($scrollTop >= $navTop)
 	{
 		$(".menu").addClass('stiky');
