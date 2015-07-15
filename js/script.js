@@ -1,51 +1,30 @@
-/**Menu Resposive*/
-$(document).ready(main);
-var contador = 1;
-
-function main (){
-	$('.bt-menu').click(function(){
-	if(contador == 1){
-		$('.menu').animate({
-			left: '0'
-		});
-	contador =0;
-	}else {
-			contador = 1;
-			$('.menu').animate({
-			left: '-100%'
-		});
-	}
-		
-	});
-	$('.navegador-Item').click(function(){
-		$('.menu').animate({
-			left: '-100%'
-		});
-	});
-}
-
-
 /**stiky Menu*/
 
 var $navTop = 441;
 var pegarStyky = function(){
 	var $scrollTop = $(window).scrollTop();
-
-
+ 	
 	if($scrollTop >= $navTop)
+		
 	{
+		$('.menu').css({left: '0'});
 		$(".menu").addClass('stiky');
 		$(".Logo").addClass('Logo2').removeClass('Logo');
 		
 		
 	}
 	else{
+		$('.menu').css({left: '-100%'});
 		$(".menu").removeClass('stiky');
 		$(".Logo2").addClass('Logo').removeClass('Logo2');
 		
 	}
 
 }
+
+
+
+
 $(window).on('scroll',pegarStyky);
 
 
@@ -100,3 +79,30 @@ $(document).ready(function(){
         }
     });
 });
+/**Menu Resposive*/
+$(document).ready(main);
+var contador = 1;
+
+function main (){
+	$('.bt-menu').click(function(){
+	if(contador == 1){
+		$('.menu').animate({
+			left: '0'
+		});
+	contador =0;
+	}else {
+			contador = 1;
+			$('.menu').animate({
+			left: '-100%'
+		});
+	}
+		
+	});
+	
+	$('.navegador-Item').click(function(){
+		$('.menu').animate({
+			left: '-100%'
+		});
+	});
+}
+

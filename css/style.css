@@ -216,6 +216,9 @@
     text-align: left;
     margin: 0 20px;
   }
+  .navegador-Lista {
+    margin: 40px 0;
+  }
   .navegador-Lista:hover {
     color: #fff;
   }
@@ -226,12 +229,6 @@
     font-family: "FontAwesome";
     content: "\f10c";
     margin-right: 10px;
-  }
-  .stiky {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 2;
   }
   .menu-img {
     width: 150px;
@@ -247,6 +244,9 @@
     height: 60px;
     box-shadow: -1px 2px 13px -1px rgba(0,0,0,0.86);
     z-index: 20;
+  }
+  .menu_bar span {
+    cursor: pointer;
   }
   .menu_bar .bt-menu {
     display: block;
