@@ -3,11 +3,17 @@
 var $navTop = 441;
 var pegarStyky = function(){
 	var $scrollTop = $(window).scrollTop();
+	var widthW = $(window).width();
  	
 	if($scrollTop >= $navTop)
 		
 	{
+		if(widthW >= 980){
 		$('.menu').css({left: '0'});
+		}else{
+			$('.menu').css({left: '-100%'});
+		}
+		
 		$(".menu").addClass('stiky');
 		$(".Logo").addClass('Logo2').removeClass('Logo');
 		
@@ -99,10 +105,19 @@ function main (){
 		
 	});
 	
-	$('.navegador-Item').click(function(){
-		$('.menu').animate({
-			left: '-100%'
-		});
+	$('.navegador-Item a').click(function(){
+		contador = 1;
+		var widthW = $(window).width();
+		if(widthW < 980){
+			
+			$('.menu').animate({
+				left: '-100%'
+			});
+			 }else{
+				$('.menu').animate({
+				left: '0'
+				});
+			 }
 	});
 }
 

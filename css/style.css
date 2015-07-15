@@ -366,13 +366,11 @@
   line-height: 1.3em;
 }
 .tituloVerde:before {
-  width: 25%;
   height: 16px;
   margin-right: 40px;
   content: url("../images/decoIzquierda.png");
 }
 .tituloVerde:after {
-  width: 25%;
   height: 16px;
   margin-left: 40px;
   content: url("../images/decoDerecha.png");
@@ -859,6 +857,50 @@ figure.effect-hera:hover p i:empty {
 /* Pseudo-clase */
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(77,161,112,0.6);
+}
+@media screen and (max-width: 992px) {
+  .tituloVerde:before {
+    height: 16px;
+    margin-right: 10px;
+    content: url("../images/decoIzquierda-Tablet.png");
+  }
+  .tituloVerde:after {
+    height: 16px;
+    margin-left: 10px;
+    content: url("../images/decoDerecha-Tablet.png");
+  }
+  .tituloRojo:before {
+    height: 16px;
+    margin-right: 10px;
+    content: url("../images/decoIzquierda-Tablet.png");
+  }
+  .tituloRojo:after {
+    height: 16px;
+    margin-left: 10px;
+    content: url("../images/decoDerecha-Tablet.png");
+  }
+}
+@media screen and (max-width: 508px) {
+  .tituloVerde:before {
+    height: 16px;
+    margin-right: 0px;
+    content: url("../images/decoIzquierda.png");
+  }
+  .tituloVerde:after {
+    content: url("../images/decoDerecha.png");
+    height: 16px;
+    margin-left: 0px;
+  }
+  .tituloRojo:before {
+    height: 16px;
+    margin-right: 0px;
+    content: url("../images/decoIzquierdaR.png");
+  }
+  .tituloRojo:after {
+    content: url("../images/decoDerechaR.png");
+    height: 16px;
+    margin-left: 0px;
+  }
 }
 /*# sourceMappingURL=lib/estilo.css.map */
 /*# sourceMappingURL=style.css.map */
